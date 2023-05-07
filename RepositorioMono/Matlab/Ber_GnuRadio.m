@@ -7,7 +7,7 @@ f2 = fopen('Out.txt', 'rb');
 values2 = fread(f2, Inf,"uint8");
 %%
 clc
-bits = 1000*8; 
+bits = 223; 
 L = length(values2)-bits + 1
 bitIn = values(1:bits);
 Errors = zeros(L,1);

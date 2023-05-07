@@ -51,7 +51,7 @@ fwrite(fileID,FRAMEIEE80211aTX);
 %%
 %leer archivo
 
-f = fopen('archivooriginal.txt', 'rb');
+f = fopen('archivorecuperado.txt', 'rb');
 RX = fread(f, Inf,"uint8");
 delay = 470; % delay obtenido con BER_GnuRadio
 FRAMEIEE80211aRX = RX(delay:delay+223-1);
